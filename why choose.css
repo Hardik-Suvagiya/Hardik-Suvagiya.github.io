@@ -1,0 +1,135 @@
+.therapy-section{
+    position: relative;
+}
+.therapy-section:before {
+    position: absolute;
+    content: "";
+    width: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    background: #2b9f9c;
+    z-index: -1;
+    border-radius: 15px;;
+}
+.therapy-machine .therapy-image-description:nth-child(2n+0) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.therapy-image-description {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 40px 25px;
+    position: relative;
+}
+.therapy-image{
+    width: 50%;
+    vertical-align: bottom;
+}
+.therapy-machine {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.therapy-image img{
+    border-radius: 15px;
+}
+.therapy-heading {
+    max-width: 40%;
+    margin: 0 0 0 auto;
+}
+.therapy-machine .therapy-image-description:nth-child(2n+0) .therapy-heading {
+    margin: 0 auto 0 0;
+}
+footer h3{
+    color: #fff;
+}
+.therapy-machine .therapy-image-description:before {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #ffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+.therapy-machine .therapy-image-description:nth-child(1):before {
+    content: "1";
+    top: -20px;
+}
+.therapy-machine .therapy-image-description:nth-child(2):before {
+    content: "2";
+}
+.therapy-machine .therapy-image-description:nth-child(3):before {
+    content: "3";
+}
+.therapy-machine .therapy-image-description:nth-child(4):before {
+    content: "4";
+}
+.therapy-machine .therapy-image-description:nth-child(5):before {
+    content: "5";
+}
+.therapy-machine .therapy-image-description:nth-child(6):before {
+    content: "6";
+}
+.therapy-machine .therapy-image-description:nth-child(7):before {
+    content: "7";
+}
+.therapy-machine .therapy-image-description:nth-child(8):before {
+    content: "8";
+}
+.therapy-machine .therapy-image-description:nth-child(9):before {
+    content: "9";
+}
+.therapy-machine .therapy-image-description:nth-child(10):before {
+    content: "10";
+}
+
+@media only screen and (max-width:1024px){
+
+}
+@media only screen and (max-width:768px){
+    .technologies-section{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .technology-head-image{
+        width: 33.33%;
+    }
+    .therapy-image-description{
+        justify-content: unset;
+    }
+}
+@media only screen and (max-width:500px){
+    .therapy-image-description,.therapy-machine .therapy-image-description:nth-child(2n+0) {
+        flex-direction: column-reverse;
+    }
+    .therapy-heading {
+        max-width: 100%;
+    }
+    .therapy-image {
+       width: 100%;
+    }  
+    .therapy-section:before {
+        width: 40%;
+    }
+    .therapy-image-description{
+        gap: 20px;
+    }
+    .therapy-heading p {
+        text-align: start;
+    }
+}
+@media only screen and (max-width:425px){
+    .technology-head-image{
+        width: 80%;
+    }
+}
