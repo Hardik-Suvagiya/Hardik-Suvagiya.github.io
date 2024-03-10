@@ -1,5 +1,5 @@
 /* </------------- Header Start ------------------/> */
-header{
+/* header{
     background-color: #fff;
     position: fixed;
     left: 0;
@@ -52,7 +52,7 @@ nav.navigation ul li a,
     color: #fff;
     font-weight:700;
     letter-spacing: 0.8px;
-}
+} */
 .therapy-section{
     position: relative;
 }
