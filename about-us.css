@@ -425,8 +425,8 @@ button.slick-nexts.slick-arrow:hover {
 }
 @media only screen and (max-width:425px){
   .find-heading {
-      display: block;
-  }
+      display: block; 
+    } 
   .technologies-image:before {
     width: 100%;
     height: 98%;
