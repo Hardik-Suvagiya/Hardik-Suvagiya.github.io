@@ -207,6 +207,9 @@ button.slick-nexts.slick-arrow:hover {
   padding: 0 35px;
   width: 50%;
 }
+.founder-text p {
+  display: flex;
+}
 .our-team {
   display: flex;
   width: 100%;
@@ -337,86 +340,86 @@ button.slick-nexts.slick-arrow:hover {
   } 
 }
 @media only screen and (max-width:769px){
-    .banner-about_us{
-      padding-block: 100px 50px;
-    }
-    .team-image-text:last-child .team-image img {
-      max-height: 400px;
-      width: 45%;
-      object-fit: fill;
-    }
-    .banner-about_us p {
-      padding-block: 10px 25px;
-    }
-    .team-image-text .team-text p {
-      grid-template-rows: 150px;
-    }
-    .our-team {
-      flex-direction: column;
-    }
-    .choose-head-img {
-      max-width: 100%;
-    }
-    .why-choose {
-      width: 90%;
-      padding: 47px 15px 15px;
-    }
-    .promise-image-content {
-      flex-direction: column;
-      gap:0px;
-    }
-    .our-team {
-      gap: 50px;
-    }
-    .team-founder .founder-image-text:last-child,.founder-image-text{
-      flex-direction: column;
-    }
-    .founder-text{
-      padding: 0;
-      width: 100%;
-    }
-    .team-heading {
-      padding-block: 30px;
-    }  
-    .founder-text h4, .team-text h4 {
-      font-size: 18px;
-    }
-    .team-image img {
-      max-height: 430px;
-      width: 45%;
-    }
-    .founder-text p {
-      text-align: start;
-      display: flex;
-    } 
-    .our-team .team-image-text:first-child .team-text ,.team-text{
-      padding: 0px 10px 20px;
-    } 
-    .promise-image,.team-image-text{
-      width: 100%;
-      max-width: 80%;
-    }
-    .promise-image img {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .technologies-section,.choose-content {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-    }  
-    .promise-content {
-      width: 100%;
-    }
-    .promise-content p {
-      width: 100%;
-    }
-    .choose-content {
-      gap: 15px;
-    }
-    .image-team img {
-      height: auto  ;
-      object-fit: contain;
+  .banner-about_us{
+    padding-block: 100px 50px;
   }
+  .team-image-text:last-child .team-image img {
+    max-height: 400px;
+    width: 45%;
+    object-fit: fill;
+  }
+  .banner-about_us p {
+    padding-block: 10px 25px;
+  }
+  .team-image-text .team-text p {
+    grid-template-rows: 150px;
+  }
+  .our-team {
+    flex-direction: column;
+  }
+  .choose-head-img {
+    max-width: 100%;
+  }
+  .why-choose {
+    width: 90%;
+    padding: 47px 15px 15px;
+  }
+  .promise-image-content {
+    flex-direction: column;
+    gap:0px;
+  }
+  .our-team {
+    gap: 50px;
+  }
+  .team-founder .founder-image-text:last-child,.founder-image-text{
+    flex-direction: column;
+  }
+  .founder-text{
+    padding: 0;
+    width: 100%;
+  }
+  .team-heading {
+    padding-block: 30px;
+  }  
+  .founder-text h4, .team-text h4 {
+    font-size: 18px;
+  }
+  .team-image img {
+    max-height: 430px;
+    width: 45%;
+  }
+  .founder-text p {
+    text-align: start;
+    display: flex;
+  } 
+  .our-team .team-image-text:first-child .team-text ,.team-text{
+    padding: 0px 10px 20px;
+  } 
+  .promise-image,.team-image-text{
+    width: 100%;
+    max-width: 80%;
+  }
+  .promise-image img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .technologies-section,.choose-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }  
+  .promise-content {
+    width: 100%;
+  }
+  .promise-content p {
+    width: 100%;
+  }
+  .choose-content {
+    gap: 15px;
+  }
+  .image-team img {
+    height: auto  ;
+    object-fit: contain;
+  } 
   .technologies-image:before {
     width: 100%;
     height: 97%;
@@ -425,8 +428,14 @@ button.slick-nexts.slick-arrow:hover {
 }
 @media only screen and (max-width:425px){
   .find-heading {
-      display: block; 
-    } 
+    display: block; 
+  } 
+  .team-founder {
+    gap: 40px;
+  }
+  .team-image-text:last-child .team-image img {
+    width: 50%;
+  }
   .technologies-image:before {
     width: 100%;
     height: 98%;
@@ -435,7 +444,7 @@ button.slick-nexts.slick-arrow:hover {
     grid-template-rows: 50px;
   }
   .team-image-text .team-text p {
-    grid-template-rows: 200px;
+    grid-template-rows: 220px;
   }
   .choose-head-img {
     max-width: 100%;
