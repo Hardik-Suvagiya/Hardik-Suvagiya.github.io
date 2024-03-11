@@ -819,6 +819,10 @@ footer h3{
         text-align: start;
         align-items: start;
     }
+    .appointment-address p{
+        color:#fff;
+        padding: 0 20px 30px;
+    }
     .fotter-address a {
         display: flex;
         gap: 15px;
