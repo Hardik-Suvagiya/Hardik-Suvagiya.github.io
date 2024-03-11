@@ -244,8 +244,6 @@ button.slick-nexts.slick-arrow:hover {
   object-fit: cover;
   object-position: top;
 }
-
-
 /* </------------- Choose Our Dente32? Start ------------------/> */
   .why-choose h3 {
     color: #fff;
@@ -302,6 +300,13 @@ button.slick-nexts.slick-arrow:hover {
 /* </------------- Our treatment Section Start ------------------/> */
 
 /* </------------- Promise Section Start ------------------/> */
+.promise-content p:before {
+  content: "\27A4";
+}
+.promise-content p {
+  display: flex;
+  padding-bottom: 15px;
+}
 .promise-head {
   display: flex;
   justify-content: center;
@@ -310,8 +315,8 @@ button.slick-nexts.slick-arrow:hover {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 0 0;
+  gap: 40px;
+  padding: 0 0 0;
 }
 .promise-content p:nth-child(3) {
   padding: 0;
