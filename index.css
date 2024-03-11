@@ -574,7 +574,7 @@ nav.navigation ul li a,
     justify-content: center;
     display: flex;
     align-items: center;
-    padding-block: 50px 0;
+    padding: 12px 0 0;
 }
 .appointment-number {
     background: #2b9f9c;
@@ -650,6 +650,22 @@ footer{
 footer h3{
     color: #fff;
 }
+.appointment-address p:before {
+    content: "\f3c5";
+    font-family: fontAwesome;
+    background: #000;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+.appointment-address p {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+    color: #fff;
+    text-align: start;
+    gap: 15px;
+}
 .footer-policy p {
     color: #fff;
     display: inline-block;
@@ -661,6 +677,9 @@ footer h3{
     border-image: linear-gradient(to right, #000,#fff ) 1;
     font-size: 14px;
 }
+.appointment-number a:last-child:before {
+    content: "\f232";
+  }
 .footer-section p {
     color: #fff;
     padding-top: 20px;
