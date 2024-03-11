@@ -111,6 +111,8 @@ footer h3{
 @media only screen and (max-width:500px){
     .therapy-image-description,.therapy-machine .therapy-image-description:nth-child(2n+0) {
         flex-direction: column-reverse;
+        padding: 35px 25px 40px;
+        gap: 10px;
     }
     .therapy-heading {
         max-width: 100%;
