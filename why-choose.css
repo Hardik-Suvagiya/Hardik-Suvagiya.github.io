@@ -60,6 +60,7 @@ footer h3{
     justify-content: center;
     align-items: center;
     font-size: 28px;
+    box-shadow: 0px 7px 20px -10px black;
 }
 .therapy-machine .therapy-image-description:nth-child(1):before {
     content: "1";
