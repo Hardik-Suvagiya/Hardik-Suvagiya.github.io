@@ -570,11 +570,10 @@ nav.navigation ul li a,
     background-color: #00614e;
 }
 .appointment-number a,.appointment-whatsapp a {
-    color: #fff;
-    justify-content: center;
+    justify-content: start;
     display: flex;
-    align-items: center;
-    padding: 12px 0 0;
+    align-items: baseline;
+    padding: 12px 0 0 20px; 
 }
 .appointment-number {
     background: #2b9f9c;
@@ -755,6 +754,16 @@ footer h3{
     }
 }
 @media only screen and (max-width:768px) {
+    .appointment-number a:before,.appointment-address p:before{
+        margin-right: 10px;
+        font-size: 12px;
+        width: 35px;
+        height: 35px;
+    }
+    .appointment-address p:before{
+        width: 13px;
+        height: 20px;
+    }
     .content-service{
         display: none;
     }
@@ -836,10 +845,10 @@ footer h3{
         padding: 45px 15px 20px;
     }
     .appointment-number a, .appointment-whatsapp a {
-        padding-block: 30px 30px;
+        padding-block: 0px 20px;
         justify-content: start;
         padding-left: 3%;
-        font-size: 19px;
+        font-size: 15px;
     }
     .appointment-time p {
         justify-content: start;
@@ -989,7 +998,7 @@ footer h3{
         background: green;
     }
     .description-image img, .description-image:nth-child(2) img {
-        width: 40%;
+        width: 50%;
     }
     .banner-text h1 {
         padding: 0 0 5px;
@@ -1009,6 +1018,12 @@ footer h3{
 @media only screen and (max-width:600px) {
     .loading-text {
         margin-bottom:10px;
+    }
+    .description-content:after {
+        top: 4%;
+        bottom: 4%;
+        left: 4%;
+        right: 4%;
     }
     .description-text p {
         display: grid;
@@ -1033,7 +1048,7 @@ footer h3{
         width: 25%;
     }
     .description-image img, .description-image:nth-child(2) img {
-        width: 40%;
+        width: 25%;
     }
     .banner-text {
         width: 100%;
@@ -1094,6 +1109,9 @@ footer h3{
 @media only screen and (max-width: 426px){
     .background-animation {
         right: 63%;
+    }
+    .description-image img, .description-image:nth-child(2) img {
+        width: 45%;
     }
     .appointment-content {
         flex-direction: column;

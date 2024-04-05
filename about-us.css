@@ -59,48 +59,8 @@ h3{
 .technoliogy-image span{
   font-weight: 600;
 }
-.technoliogy-image h3, .technoliogy-image p {
-  position: absolute;
-  top: 40%;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  left: 10%;
-  visibility: hidden;
-  border-bottom: 1px solid #fff;
-  z-index: 3;
-  padding:10px 0 0;
-  transform: translate(-10%);
-}
-.technoliogy-image p{
-  top:50%;
-}
-.technoliogy-image:hover h3,.technoliogy-image:hover p{
-  animation: left-slide 0.8s ease normal;
-  visibility: visible;
-} 
-.technologies-image p {
-  top: 50%;
-  left: 10%;
-  padding:10px 0 0;
-}
-.technologies-image:hover:before{
-  background-color: #000000d9;
-}
 .technology-head-image{
   text-align: center;
-}
-.technologies-image:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 99%;
-  background-color: #00000036;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  border-radius: 30px;
-  transition: 0.5s ease;
 }
 .technologies-image img {
   border-radius: 15px;
@@ -188,7 +148,7 @@ button.slick-nexts.slick-arrow:hover {
 }
 .team-text p {
   display: grid;
-  grid-template-rows: 320px;
+  grid-template-rows: 250px;
 }
 .team-founder {
   display: flex;
@@ -227,10 +187,10 @@ button.slick-nexts.slick-arrow:hover {
   border-radius: 15px; 
 }
 .our-team .team-image-text:first-child .team-text {
-  padding: 40px 60px 60px;
+  padding: 40px 30px 60px;
 }
 .team-text{
-  padding: 30px 60px;
+  padding: 30px 30;
   text-align: center;
 }
 .team-image-text {
@@ -348,13 +308,22 @@ button.slick-nexts.slick-arrow:hover {
   .banner-about_us{
     padding-block: 100px 50px;
   }
+  .founder-text h4, .team-text h4 {
+    grid-template-rows: 30px;
+  }
+  .technologies-image img {
+    border-radius: 10px;
+  }
   .team-image-text:last-child .team-image img {
     max-height: 400px;
-    width: 45%;
+    width: 65%;
     object-fit: fill;
   }
   .banner-about_us p {
     padding-block: 10px 25px;
+  }
+  .team-intro-section p{
+    font-size: 12px;
   }
   .team-image-text .team-text p {
     grid-template-rows: 150px;
