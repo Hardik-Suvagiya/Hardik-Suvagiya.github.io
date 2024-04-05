@@ -7,6 +7,17 @@
     .addEventListener('click', function () {
       this.classList.toggle('activate');
     });
+    
+ // body overflow hidden 
+ document.querySelector('.toggle').addEventListener('click', function () {
+    document.body.classList.toggle('hide');
+  });
+  // toggle function 
+  document.querySelector('.navigation-slide')
+    .addEventListener('click', function () {
+      this.classList.toggle('activate');
+    });
+
 
   const labels = document.querySelectorAll(".form-control label");
   const delayUnit = 50;
@@ -46,23 +57,12 @@
       document.body.style.overflow = 'auto';
     });
   });
-
- // body overflow hidden 
- document.querySelector('.toggle').addEventListener('click', function () {
-    document.body.classList.toggle('hide');
-  });
-  // toggle function 
-  document.querySelector('.navigation-slide')
-    .addEventListener('click', function () {
-      this.classList.toggle('activate');
-    });
-
     
   // toggle function 
   document.querySelector('.navigation-slide')
     .addEventListener('click', function () {
       this.classList.toggle('activate');
-    });
+});
 
   $('.content-service-slider').slick({
     dots: false,
