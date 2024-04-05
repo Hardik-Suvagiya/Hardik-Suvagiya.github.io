@@ -151,35 +151,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
-<script type="text/javascript">
-  // loder satrt
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Show loader when the page is reloaded
-    document.getElementById('loader').style.display = 'flex';
-
-    // Disable body scroll
-    document.body.style.overflow = 'hidden';
-
-    // Add an event listener for page reload
-    window.addEventListener('beforeunload', function () {
-      // Show loader when the page is reloaded
-      document.getElementById('loader').style.display = 'flex';
-
-      // Disable body scroll
-      document.body.style.overflow = 'hidden';
-    });
-
-    // Add an event listener for when the page has finished loading
-    window.addEventListener('load', function () {
-      // Hide loader when the page has finished loading
-      document.getElementById('loader').style.display = 'none';
-
-      // Enable body scroll
-      document.body.style.overflow = 'auto';
-    });
-  });
-</script>
