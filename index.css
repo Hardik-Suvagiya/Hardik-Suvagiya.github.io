@@ -278,9 +278,10 @@ h2.bottom-line::before {
 /* </------------- Fixed Text ------------------/> */
 .text-social {
     display: flex;
-    width: 33.33%;
+    width: 40%;
     gap: 20px;
     padding-block: 30px 0;
+    align-items: center;
 }
 /* </------------- Header Start ------------------/> */
 header{
