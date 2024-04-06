@@ -19,6 +19,7 @@
   background: transparent;
   color: #fff;
   font-size: 18px;
+  border: 1px solid #fff;
 }
 .btn {
   border: 0;
@@ -135,6 +136,9 @@ button.btn:hover:after {
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
+}
+.find-map iframe {
+  width: 100%;
 }
 i.et-pb-icon img {
   width: 37px;

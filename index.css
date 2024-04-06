@@ -621,6 +621,12 @@ nav.navigation ul li a,
     display: flex;
     align-items: center;
 }
+.appointment-content .appointment-whatsapp.appointment-address a:before {
+    display: none;
+}
+.appointment-content .appointment-whatsapp.appointment-address p {
+    padding: 0;
+}
 @media only screen and (max-width: 1024px){
     .appointment-whatsapp h3, .appointment-time h3, .appointment-number h3 {
         padding: 65px 35px 50px;
@@ -1111,6 +1117,9 @@ footer h3{
 @media only screen and (max-width: 426px){
     .background-animation {
         right: 63%;
+    }
+    ul.navigation-menu-slide{
+        width: 80%;
     }
     .description-image img, .description-image:nth-child(2) img {
         width: 45%;

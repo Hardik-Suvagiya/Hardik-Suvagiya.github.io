@@ -16,7 +16,10 @@
   document.querySelector('.navigation-slide')
     .addEventListener('click', function () {
       this.classList.toggle('activate');
-    });
+  });
+
+
+
 
 
   const labels = document.querySelectorAll(".form-control label");
