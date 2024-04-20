@@ -34,7 +34,9 @@
       )
       .join("");
   });
+  
 
+  
   document.addEventListener("DOMContentLoaded", function () {
     // Show loader when the page is reloaded
     document.getElementById('loader').style.display = 'flex';

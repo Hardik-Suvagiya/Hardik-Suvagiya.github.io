@@ -57,6 +57,7 @@
   background-color: transparent;
   border: 0;
   border-bottom: 2px solid white;
+  border-bottom-color: white;
   color: white;
   display: block;
   font-size: 1.2rem;
@@ -66,11 +67,22 @@
 .form-control input::placeholder {
   color: transparent;
 }
-.form-control input:focus,
-.form-control input:valid {
-  border-bottom-color: #fff;
+.form-control input:focus{
+  border-bottom: 2px solid white;
   outline: 0;
 }
+.form-control input:valid {
+  border-bottom: 2px solid green;
+  outline: 0;
+}
+.form-control input:not(:placeholder-shown):invalid:empty {
+  border-bottom: 2px solid red;
+}
+
+/* .form-control input:invalid ~ label {
+  position: absolute;
+  top: -5px;
+} */
 .form-control label {
   left: 0;
   position: absolute;
