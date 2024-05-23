@@ -24,16 +24,36 @@ body[style="overflow: auto;"]::before {
     z-index: 9999;
     display: none;
 }
-body[style="overflow: hidden;"]:before {
+body[style="overflow: hidden;"]:before,
+body[style="overflow: hidden;"]:after {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 50%; /* Adjust based on your requirements */
     background: black;
     z-index: 9999;
-    display: block;
+    transition: transform 5s ease-in-out;
+}
+
+/* Initial state: Covers the whole screen */
+body[style="overflow: hidden;"]:before {
+    top: 0;
+    transform: translateY(0);
+}
+
+body[style="overflow: hidden;"]:after {
+    bottom: 0;
+    transform: translateY(0);
+}
+
+/* Final state: Revealed */
+body.revealed[style="overflow: hidden;"]:before {
+    transform: translateY(-100%);
+}
+
+body.revealed[style="overflow: hidden;"]:after {
+    transform: translateY(100%);
 }
 .container-section{
     max-width: 1570px;

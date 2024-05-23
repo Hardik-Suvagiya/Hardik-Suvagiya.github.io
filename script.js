@@ -36,18 +36,26 @@
   });
   
 
-  
   document.addEventListener("DOMContentLoaded", function () {
     // Show loader when the page is loaded
     document.getElementById('loader').style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Disable body scroll
-  
-    // Hide loader after 5 seconds
+
+    // Hide loader after 5 seconds with transition
     setTimeout(function() {
-      document.getElementById('loader').style.display = 'none';
-      document.body.style.overflow = 'auto'; // Enable body scroll
-    }, 5000);
-  });
+        document.body.classList.add('revealed');
+        
+        // After the transition is complete, hide the loader and reset overflow
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable body scroll
+            document.body.classList.remove('revealed');
+        }, 4000); // Match this duration with the CSS transition duration
+    }, 4000);
+});
+
+
+
   // toggle function 
   document.querySelector('.navigation-slide')
     .addEventListener('click', function () {
