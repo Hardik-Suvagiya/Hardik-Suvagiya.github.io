@@ -24,37 +24,7 @@ body[style="overflow: auto;"]::before {
     z-index: 9999;
     display: none;
 }
-body[style="overflow: hidden;"]:before,
-body[style="overflow: hidden;"]:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 50%; /* Adjust based on your requirements */
-    background: black;
-    z-index: 9999;
-    transition: transform 5s ease-in-out;
-}
 
-/* Initial state: Covers the whole screen */
-body[style="overflow: hidden;"]:before {
-    top: 0;
-    transform: translateY(0);
-}
-
-body[style="overflow: hidden;"]:after {
-    bottom: 0;
-    transform: translateY(0);
-}
-
-/* Final state: Revealed */
-body.revealed[style="overflow: hidden;"]:before {
-    transform: translateY(-100%);
-}
-
-body.revealed[style="overflow: hidden;"]:after {
-    transform: translateY(100%);
-}
 .container-section{
     max-width: 1570px;
     margin: 0 auto;
@@ -194,7 +164,52 @@ h2.bottom-line::before {
     }
 }
 /* </------------- Loder Start ------------------/> */
-.loading-container {
+#loader {
+    display: none; /* Initially hidden, shown by JavaScript on DOMContentLoaded */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    align-items: center;
+    justify-content: center;
+    z-index: 9998; /* Ensure it covers everything */
+}
+body.revealed #loader {
+    opacity: 0;
+    transition: opacity 5s;
+}
+body[style="overflow: hidden;"]:before,
+body[style="overflow: hidden;"]:after {
+    content: "";
+    position: fixed; /* Fixed position to cover the entire viewport */
+    left: 0;
+    right: 0;
+    height: 50%; /* Adjust based on your requirements */
+    background: black;
+    z-index: 9999;
+    transition: transform 5s ease-in-out;
+}
+
+body[style="overflow: hidden;"]:before {
+    top: 0;
+    transform: translateY(0);
+}
+
+body[style="overflow: hidden;"]:after {
+    bottom: 0;
+    transform: translateY(0);
+}
+
+body.revealed[style="overflow: hidden;"]:before {
+    transform: translateY(-100%);
+}
+
+body.revealed[style="overflow: hidden;"]:after {
+    transform: translateY(100%);
+}
+.loading-text {
     width: 100%;
     max-width: 520px;
     text-align: center;
@@ -205,13 +220,13 @@ h2.bottom-line::before {
     &:before {
       content: "";
       position: absolute;
-      width: 100%;
+      width: fit-content;
       height: 3px;
       background-color: #00614e;
       bottom: 0;
       left: 0;
       border-radius: 10px;
-      animation: movingLine 2.4s infinite ease-in-out;
+      animation: movingLine 3.5s infinite ease-in-out;
     }
   }
   loder {

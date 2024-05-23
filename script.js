@@ -36,6 +36,8 @@
   });
   
 
+
+
   document.addEventListener("DOMContentLoaded", function () {
     // Show loader when the page is loaded
     document.getElementById('loader').style.display = 'flex';
@@ -50,8 +52,8 @@
             document.getElementById('loader').style.display = 'none';
             document.body.style.overflow = 'auto'; // Enable body scroll
             document.body.classList.remove('revealed');
-        }, 4000); // Match this duration with the CSS transition duration
-    }, 4000);
+        }, 5000); // Match this duration with the CSS transition duration
+    }, 5000);
 });
 
 
@@ -61,6 +63,9 @@
     .addEventListener('click', function () {
       this.classList.toggle('activate');
 });
+
+
+
 
   $('.content-service-slider').slick({
     dots: false,
