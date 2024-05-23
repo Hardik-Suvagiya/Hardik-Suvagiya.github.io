@@ -412,18 +412,18 @@ nav.navigation ul li a,
     color: #fff;
     font-weight:600;
 }   
-.banner-text h1 span {
+/* .banner-text h1 span {
     white-space: pre;
     background-image: url(image/h1-bottom.png);
     background-position: 50% 76%;
     background-repeat: no-repeat;
     background-size: 100% 16px;
-}
+} */
 .banner-text p{
     color: #fff;
     font-size: 22px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
 }
 .image-banner{
     position: relative;
