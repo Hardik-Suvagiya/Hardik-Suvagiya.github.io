@@ -215,7 +215,7 @@ body.revealed[style="overflow: hidden;"]:after {
     text-align: center;
     color: #fff;
     position: relative;
-    margin: 0 32px;
+    margin: 0 auto;
   
     &:before {
       content: "";
@@ -392,9 +392,11 @@ nav.navigation ul li a,
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 .banner-text{
-    width: 40%;
+    max-width: 45%;
+    width: 100%;
 }
 .image-banner img {
     width: 100%;
@@ -403,18 +405,27 @@ nav.navigation ul li a,
     transform: translate(0, 5px);
 }
 .banner-text h1 {
-    padding: 0 0 35px;
-    font-size: 50px;
+    padding: 0 0 30px;
+    font-size: 80px;
+    line-height: 100px;
     font-family: 'Poppins',sans-serif;
     color: #fff;
     font-weight:600;
 }   
+.banner-text h1 span {
+    white-space: pre;
+    background-image: url(https://assets-global.website-files.com/64f1ce2…/6504233…_Rectangle%20203.webp);
+    background-position: 50% 76%;
+    background-repeat: no-repeat;
+    background-size: 100% 16px;
+}
 .banner-text p{
     color: #fff;
 }
 .image-banner{
     position: relative;
-    width: 50%;
+    max-width: 50%;
+    width: 100%;
 }
 .background-animation {
     position: absolute;
