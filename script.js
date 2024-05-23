@@ -38,31 +38,16 @@
 
   
   document.addEventListener("DOMContentLoaded", function () {
-    // Show loader when the page is reloaded
+    // Show loader when the page is loaded
     document.getElementById('loader').style.display = 'flex';
-
-    // Disable body scroll
-    document.body.style.overflow = 'hidden';
-
-    // Add an event listener for page reload
-    window.addEventListener('beforeunload', function () {
-      // Show loader when the page is reloaded
-      document.getElementById('loader').style.display = 'flex';
-
-      // Disable body scroll
-      document.body.style.overflow = 'hidden';
-    });
-
-    // Add an event listener for when the page has finished loading
-    window.addEventListener('load', function () {
-      // Hide loader when the page has finished loading
+    document.body.style.overflow = 'hidden'; // Disable body scroll
+  
+    // Hide loader after 5 seconds
+    setTimeout(function() {
       document.getElementById('loader').style.display = 'none';
-
-      // Enable body scroll
-      document.body.style.overflow = 'auto';
-    });
+      document.body.style.overflow = 'auto'; // Enable body scroll
+    }, 5000);
   });
-    
   // toggle function 
   document.querySelector('.navigation-slide')
     .addEventListener('click', function () {
