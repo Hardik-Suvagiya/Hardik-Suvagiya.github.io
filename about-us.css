@@ -127,17 +127,12 @@ button.slick-nexts.slick-arrow:hover {
   align-items: center;
 }
 .founder-image{
-  width: 50%;
+  max-width: 50%;
+  width: 100% ;
   display: flex;
-  box-shadow:0px 0px 10px 0px #80808073;
+  box-shadow:0px 0px 70px -30px #45c1be;
   border-radius: 15px;
   justify-content: center;
-}
-.founder-image {
-  max-height: 650px;
-}
-.founder-image img{
-  width: 80%;
 }
 .founder-text h4, .team-text h4 {
   display: grid;
@@ -146,11 +141,6 @@ button.slick-nexts.slick-arrow:hover {
   text-align: start;
   font-size: 22px;
 }   
-.team-founder {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
 .team-founder .founder-image-text:last-child {
   display: flex;
   flex-direction: row-reverse;
@@ -161,7 +151,8 @@ button.slick-nexts.slick-arrow:hover {
 }
 .founder-text {
   padding: 0 35px;
-  width: 50%;
+  max-width: 50%;
+  width: 100%;
 }
 .founder-text p {
   display: flex;
@@ -169,7 +160,7 @@ button.slick-nexts.slick-arrow:hover {
 .our-team {
   display: flex;
   width: 100%;
-  gap: 90px;
+  gap: 10px;
 }
 .team-image img {
   position: absolute;
@@ -195,12 +186,23 @@ button.slick-nexts.slick-arrow:hover {
 .team-image-text {
   max-width: 50%;
   width: 100%;
-  box-shadow:0px 0px 10px 0px #80808073;
+  box-shadow:0px 0px 70px -30px #45c1be;
   border-radius: 15px;
 }
+.image-team {
+  position: relative;
+  padding-bottom: 80%;
+  box-shadow: 0px 0px 30px 4px #45c1be;
+  border-radius: 50px;
+  overflow: hidden;
+}
 .image-team img {
-  object-fit: cover;
-  object-position: top;
+  position: absolute;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  padding: 0 80px 0;
+  background: #2b9f9c;
 }
 /* </------------- Choose Our Dente32? Start ------------------/> */
   .why-choose h3 {
@@ -368,10 +370,6 @@ button.slick-nexts.slick-arrow:hover {
   .choose-content {
     gap: 15px;
   }
-  .image-team img {
-    height: auto  ;
-    object-fit: contain;
-  } 
   .technologies-image:before {
     width: 100%;
     height: 97%;

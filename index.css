@@ -89,6 +89,7 @@ li.menu-item.active:after {
 img{
     max-width: 100%;
     width: 100%;
+    vertical-align: bottom;
 }
 a:hover{
     color: #08be9a;
@@ -504,7 +505,7 @@ nav.navigation ul li a,
     max-width: 25%;
     border-radius: 50%;
     background: #2b9f9c;
-    box-shadow: 0px 0px 30px 8px #80808078;
+    box-shadow: 0px 0px 30px 8px #45c1be;
 }
 .description-content {
     padding: 40px 44px 40px;
