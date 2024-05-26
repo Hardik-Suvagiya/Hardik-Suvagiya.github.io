@@ -145,11 +145,7 @@ button.slick-nexts.slick-arrow:hover {
   grid-template-rows: 90px;
   text-align: start;
   font-size: 22px;
-}
-.team-text p {
-  display: grid;
-  grid-template-rows: 250px;
-}
+}   
 .team-founder {
   display: flex;
   flex-direction: column;
@@ -174,33 +170,35 @@ button.slick-nexts.slick-arrow:hover {
   display: flex;
   width: 100%;
   gap: 90px;
-  align-items: center;
 }
 .team-image img {
-  max-height: 500px;
-  width: 55%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .team-image {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid black;
   border-radius: 15px; 
+  position: relative;
+  padding-bottom: 100%;
 }
 .our-team .team-image-text:first-child .team-text {
   padding: 40px 30px 60px;
 }
 .team-text{
-  padding: 30px 30;
+  padding: 30px 30px;
   text-align: center;
 }
 .team-image-text {
-  width: 50%;
-  max-height: 870px;
+  max-width: 50%;
+  width: 100%;
   box-shadow:0px 0px 10px 0px #80808073;
   border-radius: 15px;
 }
 .image-team img {
-  height: 674px;
   object-fit: cover;
   object-position: top;
 }
@@ -219,7 +217,7 @@ button.slick-nexts.slick-arrow:hover {
   .choose-heading p {
     color: #fff;
     text-align: center;
-    line-height: 30px;
+    line-height: 25px;
     width: 85%;
     margin: 0 auto;
   }
@@ -296,14 +294,6 @@ button.slick-nexts.slick-arrow:hover {
 .promise-content p {
   width: 100%;
 }
-@media only screen and (max-width:1024px){
-  .team-image-text:last-child .team-image img {
-    max-height: 325px;
-    width: 50%;
-    object-fit: contain;
-    object-position: bottom;
-  } 
-}
 @media only screen and (max-width:769px){
   .banner-about_us{
     padding-block: 100px 50px;
@@ -314,19 +304,14 @@ button.slick-nexts.slick-arrow:hover {
   .technologies-image img {
     border-radius: 10px;
   }
-  .team-image-text:last-child .team-image img {
-    max-height: 400px;
-    width: 65%;
-    object-fit: fill;
-  }
   .banner-about_us p {
     padding-block: 10px 25px;
   }
   .team-intro-section p{
     font-size: 12px;
   }
-  .team-image-text .team-text p {
-    grid-template-rows: 150px;
+  .team-image{
+    padding-bottom: 70%;
   }
   .our-team {
     flex-direction: column;
@@ -358,10 +343,6 @@ button.slick-nexts.slick-arrow:hover {
   .founder-text h4, .team-text h4 {
     font-size: 18px;
   }
-  .team-image img {
-    max-height: 430px;
-    width: 45%;
-  }
   .founder-text p {
     text-align: start;
     display: flex;
@@ -372,9 +353,6 @@ button.slick-nexts.slick-arrow:hover {
   .promise-image,.team-image-text{
     width: 100%;
     max-width: 80%;
-  }
-  .promise-image img {
-    width: 100%;
     margin: 0 auto;
   }
   .technologies-section,.choose-content {
@@ -407,18 +385,12 @@ button.slick-nexts.slick-arrow:hover {
   .team-founder {
     gap: 40px;
   }
-  .team-image-text:last-child .team-image img {
-    width: 50%;
-  }
   .technologies-image:before {
     width: 100%;
     height: 98%;
   }
   .founder-text h4, .team-text h4 {
     grid-template-rows: 50px;
-  }
-  .team-image-text .team-text p {
-    grid-template-rows: 220px;
   }
   .choose-head-img {
     max-width: 100%;
