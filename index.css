@@ -38,9 +38,8 @@ h2,h3,h1{
     letter-spacing: 0.8px;
 }
 h2{
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(100.9deg, #463670 23.06%, #00614e 40% , #2b9f9c 100.25%);
-    background-clip: text;
+    color: #000;
+    text-transform: capitalize;
 }
 h1{
     letter-spacing: 3px;
@@ -408,10 +407,11 @@ nav.navigation ul li a,
 .banner-text h1 {
     padding: 0 0 30px;
     font-size: 80px;
-    line-height: 100px;
-    font-family: 'Poppins',sans-serif;
+    line-height: 82px;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-weight:600;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px #00000040;
 }   
 /* .banner-text h1 span {
     white-space: pre;
@@ -497,6 +497,7 @@ nav.navigation ul li a,
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 80px;
+    padding-top: 80px;
 }
 .description-image {
     display: flex;
@@ -506,13 +507,13 @@ nav.navigation ul li a,
     border-radius: 50%;
     background: #2b9f9c;
     box-shadow: 0px 0px 30px 8px #45c1be;
+    margin-top: -80px;
 }
 .description-content {
     padding: 40px 44px 40px;
     box-shadow: 0px 0px 20px 1px #80808047;
     border-radius: 15px;
     position: relative;
-    overflow: hidden;
     background: #2b9f9c;
 }
 .description-text {
@@ -802,9 +803,6 @@ footer h3{
     }
     .description-content {
         padding: 30px 34px 30px;
-    }
-    .description-image img {
-        width: 45%;
     }    
 }
 @media only screen and (min-width:769px){
@@ -818,6 +816,9 @@ footer h3{
         font-size: 12px;
         width: 35px;
         height: 35px;
+    }
+    .description-image {
+        max-width: 55%;
     }
     .appointment-address p:before{
         width: 13px;
@@ -833,9 +834,14 @@ footer h3{
     .promise-section .description-text{
         height: 100%;
     }
+    .content-service-slider .slick-list{
+        margin: 0 0 0 -30px;
+    }
+    .content-service-slider .slick-list .slick-track .description-content{
+        margin-left: 30px;
+    }
     .content-service-slider .slick-list .slick-track{
-        display: flex;
-        gap: 30px;
+        padding-top: 50px;
     }
     .appointment-section {
         display: flex;
@@ -1058,7 +1064,7 @@ footer h3{
         background: green;
     }
     .description-image img, .description-image:nth-child(2) img {
-        width: 50%;
+        width: 75%;
     }
     .banner-text h1 {
         padding: 0 0 5px;
@@ -1107,9 +1113,6 @@ footer h3{
         display: flex;
         width: 25%;
     }
-    .description-image img, .description-image:nth-child(2) img {
-        width: 25%;
-    }
     .banner-text {
         width: 100%;
     }
@@ -1134,6 +1137,15 @@ footer h3{
     }
     .find-me {
         gap: 80px;
+    }
+    .description-image img, .description-image:nth-child(2) img {
+        width: 55%;
+    }
+    .description-image {
+        max-width: 35%;
+    }
+    .description-image {
+        margin-top: -70px;
     }
     .find-heading {
         padding-bottom: 50px;
@@ -1172,9 +1184,6 @@ footer h3{
     }
     ul.navigation-menu-slide{
         width: 80%;
-    }
-    .description-image img, .description-image:nth-child(2) img {
-        width: 45%;
     }
     .appointment-content {
         flex-direction: column;
