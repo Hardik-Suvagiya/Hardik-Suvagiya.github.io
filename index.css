@@ -24,11 +24,19 @@ body[style="overflow: auto;"]::before {
     z-index: 9999;
     display: none;
 }
-
 .container-section{
     max-width: 1570px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translate(0);
+}
+.fade-in {
+    opacity: 0;
+    transform: translate(-50px,50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 h2,h3,h1{
     font-size: 35px;
@@ -375,7 +383,7 @@ nav.navigation ul li a,
 }
 /* </------------- Banner Start ------------------/> */
 .banner-text p:before {
-    content: "\21DD";
+    content: "\297D";
 }
 .banner-section{
     background: url(image/banner-Image.png);

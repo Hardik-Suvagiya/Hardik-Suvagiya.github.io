@@ -1,4 +1,25 @@
-  // body overflow hidden 
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+          } else {
+              entry.target.classList.remove('show');
+          }
+      });
+  }, {
+      threshold: 0.5 // Trigger when 50% of the element is visible
+  });
+
+  boxes.forEach(box => {
+      observer.observe(box);
+  });
+});
+ 
+ 
+ // body overflow hidden 
   document.querySelector('.toggle').addEventListener('click', function () {
     document.body.classList.toggle('hide');
   })
