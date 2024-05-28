@@ -52,8 +52,8 @@
             document.getElementById('loader').style.display = 'none';
             document.body.style.overflow = 'auto'; // Enable body scroll
             document.body.classList.remove('revealed');
-        }, 5000); // Match this duration with the CSS transition duration
-    }, 5000);
+        }, 3000); // Match this duration with the CSS transition duration
+    }, 3000);
 });
 
 
