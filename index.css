@@ -490,7 +490,7 @@ nav.navigation ul li a,
     line-height: 82px;
     color: var(--color-white);
     font-weight: 600;
-    text-shadow: 0px 4px 4px var(--color-black)00040;
+    text-shadow: 9px 5px 20px var(--color-black);
 }
 
 .banner-text p {

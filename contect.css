@@ -56,7 +56,7 @@
 .contect-side-section {
   box-shadow:7px 0px 15px -8.7px var(--color-darkgreen);
   padding: 50px;
-  background: var(--color-main);
+  background-image:url(image/banner-Image.png);
   border-top-right-radius: var(--border);
   border-bottom-right-radius: var(--border);
   max-width: 50%;
