@@ -13,9 +13,9 @@
     left: 50%;
     transform: translate(-50%);
     height: 100%;
-    background: #2b9f9c;
+    background: var(--color-main);
     z-index: -1;
-    border-radius: 15px;;
+    border-radius:var(--border);
 }
 .therapy-machine .therapy-image-description:nth-child(2n+0) {
     display: flex;
@@ -41,7 +41,7 @@
     padding-block: 30px;
 }
 .therapy-image img{
-    border-radius: 15px;
+    border-radius:var(--border);
 }
 .therapy-heading {
     max-width: 44%;
@@ -51,22 +51,25 @@
     margin: 0 0 0 auto;
 }
 footer h3{
-    color: #fff;
+    color: var(--color-white);
 }
 .therapy-machine .therapy-image-description:before {
     position: absolute;
     top: -50px;
     left: 50%;
     transform: translate(-50%, 0);
-    background: #ffff;
+    color: var(--color-white);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: var(--circle);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 28px;
-    box-shadow: 0px 7px 20px -10px black;
+    box-shadow: 0px 7px 20px -10px var(--color-black);
+}
+.therapy-heading h3{
+    color: var(--color-black);
 }
 .therapy-machine .therapy-image-description:nth-child(1):before {
     content: "1";
@@ -108,11 +111,7 @@ footer h3{
     margin: 25px 25px 30px;
     gap: 40px;
 }
-
-@media only screen and (max-width:1024px){
-
-}
-@media only screen and (max-width:768px){
+    @media only screen and (max-width:768px){
     .technologies-section{
         display: flex !important;
         flex-wrap: wrap;
@@ -145,8 +144,6 @@ footer h3{
     .therapy-heading p {
         text-align: start;
     }
-}
-@media only screen and (max-width:500px){
 }
 @media only screen and (max-width:425px){
     .technology-head-image{

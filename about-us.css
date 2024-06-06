@@ -1,19 +1,26 @@
+:root{
+  --h4-size:22px;
+}
 p {
   padding: 5px 0;
   line-height: 22px;
-  color: #000;
+  color: var(--color-black);
   letter-spacing: 1.2px;
   font-weight: 400;
 }
+
 h4 {
   padding-block: 5px;
 }
-td{
-  color: #cbb26a;
+
+td {
+  color: var(--color-gold);
 }
-h3{
-  color: #000;
+
+h3 {
+  color: var(--color-white);
 }
+
 /* </------------- Banner Start ------------------/> */
 .about_us-section {
   background: url(image/banner-Image.png);
@@ -23,73 +30,83 @@ h3{
   background-position: top center;
   background-size: cover;
 }
+
 .banner-about_us,
 .banner-about_us p {
   padding-block: 100px;
   display: inline-block;
   text-align: center;
   width: 100%;
-  color: #fff;
+  color: var(--color-white);
 }
+
 .banner-about_us p {
   padding-block: 20px 50px;
 }
+
 .about_us-heading {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
 }
+
 .about_us-technology {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
+
 .about_us-head-image {
   text-align: center;
   padding: 30px 15px;
 }
+
 /* </------------- Technology Start ------------------/> */
 .technologies-section {
   display: flex;
   gap: 40px;
   justify-content: center;
 }
+
 .technoliogy-image {
   position: relative;
   overflow: hidden;
 }
-.technoliogy-image span{
+
+.technoliogy-image span {
   font-weight: 600;
 }
-.technology-head-image{
+
+.technology-head-image {
   text-align: center;
 }
+
 .technologies-image img {
-  border-radius: 15px;
+  border-radius:var(--border);
   height: 100%;
 }
+
 .technology-head-image h4 {
   padding-bottom: 20px;
 }
-@keyframes left-slide{
-  0%{
+
+@keyframes left-slide {
+  0% {
     transform: translate(-200%);
   }
-  100%{
+
+  100% {
     transform: translate(-10%);
   }
 }
+
 /* .slick-slide img {
-  display: inline-block !important;
-}
+  display: inline-block !important;}
 .about_us-head-image img {
   border-radius: 100px;
-  box-shadow: 0px 0px 15px 5px gray;
-}
+  box-shadow: 0px 0px 15px 5px gray;}
 button.slick-nexts.slick-arrow {
-  right: 0;
-}
+  right: 0;}
 .about_us-head-image h4:nth-child(2){
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px;}
 button.slick-prevs.slick-arrow,
 button.slick-nexts.slick-arrow {
   position: absolute;
@@ -106,171 +123,193 @@ button.slick-nexts.slick-arrow {
   align-items: center;
   cursor: pointer;
   transition: 0.5s ease-in-out;
-  color: #000;
-}
+  color: var(--color-black);}
 button.slick-prevs.slick-arrow:hover,
 button.slick-nexts.slick-arrow:hover {
-  background: #cbb26a;
-  color: #fff;
+  background: var(--color-gold);
+  color: var(--color-white);
   border: 1px solid transparent;
-  transition: 0.5s ease-in-out;
-} */
+  transition: 0.5s ease-in-out;}
+*/
 /* </------------- Our Team Section Start ------------------/> */
-.team-heading {
-  display: flex;
-  justify-content: center;
+.team-heading h3 {
+  display: table;
+  margin: 0 auto;
+  color: var(--color-black);
   padding-block: 60px;
 }
-.founder-image-text{
+
+.founder-image-text {
   display: flex;
   width: 100%;
   align-items: center;
 }
-.founder-image{
+
+.founder-image {
   max-width: 50%;
-  width: 100% ;
+  width: 100%;
   display: flex;
-  box-shadow:0px 0px 70px -30px #45c1be;
-  border-radius: 15px;
+  box-shadow: 0px 0px 70px -30px var(--color-box);
+  border-radius:var(--border);
   justify-content: center;
 }
-.founder-text h4, .team-text h4 {
+
+.founder-text h4,
+.team-text h4 {
   display: grid;
   justify-content: center;
   grid-template-rows: 90px;
   text-align: start;
-  font-size: 22px;
-}   
+  font-size: var(--h4-size);
+}
+
 .team-founder .founder-image-text:last-child {
   display: flex;
   flex-direction: row-reverse;
 }
+
 .founder-text p:before {
   content: "\27A4";
   padding-right: 5px;
 }
+
 .founder-text {
   padding: 0 35px;
   max-width: 50%;
   width: 100%;
 }
+
 .founder-text p {
   display: flex;
 }
+
 .our-team {
   display: flex;
   width: 100%;
   gap: 10px;
 }
+
 .team-image img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .team-image {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid black;
-  border-radius: 15px; 
+  border-bottom: 2px solid var(--color-black);
+  border-radius:var(--border);
   position: relative;
   padding-bottom: 100%;
 }
+
 .our-team .team-image-text:first-child .team-text {
   padding: 40px 30px 60px;
 }
-.team-text{
+
+.team-text {
   padding: 30px 30px;
   text-align: center;
 }
+
 .team-image-text {
   max-width: 50%;
   width: 100%;
-  box-shadow:0px 0px 70px -30px #45c1be;
-  border-radius: 15px;
+  box-shadow:inset 0px 0px 70px -30px var(--color-box);
+  border-radius:var(--border);
 }
+
 .image-team {
   position: relative;
   padding-bottom: 80%;
-  box-shadow: 0px 0px 30px 4px #45c1be;
-  border-radius: 50px;
+  box-shadow: 0px 0px 30px 4px var(--color-box);
+  border-radius: var(--border);
   overflow: hidden;
 }
+
 .image-team img {
   position: absolute;
   height: 100%;
   object-fit: contain;
   object-position: center bottom;
   padding: 0 80px 0;
-  background: #2b9f9c;
-  }
-/* </------------- Choose Our Dente32? Start ------------------/> */
-  .why-choose h3 {
-    color: #fff;
-  }
-  .choose-content {
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px;
-    padding-block: 55px 0;
-  }
-  .choose-heading p {
-    color: #fff;
-    text-align: center;
-    line-height: 25px;
-    width: 85%;
-    margin: 0 auto;
-  }
-  .why-choose h3 {
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-  }
-  .choose-head-img {
-    max-width: 20%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .why-choose {
-    width: 60%;
-    border-radius: 15px;
-    background: linear-gradient(-119.1deg, #463670 13.06%, #00614e 60% , #2b9f9c 80.25%);
-    padding: 60px 30px;
-    margin: 60px auto 0;
-  }
-  .choose-image img {
-    width: 70%;
+  background: var( --color-main);
 }
-  .choose-image {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 16px 5px #8080804a;
-    background: #2b9f9c;
-    padding: 26px 10px;
-  }
-  .choose-head-img p {
-    font-size: 15px;
-    line-height: 21px;
-  }
+
+/* </------------- Choose Our Dente32? Start ------------------/> */
+.choose-content {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding-block: 55px 0;
+}
+
+.choose-heading p {
+  color: var(--color-white);
+  text-align: center;
+  line-height: 25px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.why-choose h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.choose-head-img {
+  max-width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-choose {
+  width: 60%;
+  border-radius:var(--border);
+  background: linear-gradient(-119.1deg, var(--color-secondary) 13.06%, var(--color-darkgreen) 60%, var( --color-main) 80.25%);
+  padding: 60px 30px;
+  margin: 60px auto 0;
+}
+
+.choose-image img {
+  width: 70%;
+}
+
+.choose-image {
+  border-radius: var(--circle);
+  margin-bottom: 10px;
+  box-shadow:inset 0px 0px 20px 5px var(--color-box);
+  background: var( --color-main);
+  padding: 26px 10px;
+}
+
 
 /* </------------- Our treatment Section Start ------------------/> */
-
+.technologies-section h3{
+  color: var(--color-black);
+}
 /* </------------- Promise Section Start ------------------/> */
 .promise-content p:before {
   content: "\27A4";
 }
+
 .promise-content p {
   display: flex;
   padding-bottom: 15px;
 }
+
 .promise-head {
   display: flex;
   justify-content: center;
 }
+
 .promise-image-content {
   display: flex;
   width: 100%;
@@ -278,130 +317,181 @@ button.slick-nexts.slick-arrow:hover {
   gap: 40px;
   padding: 0 0 0;
 }
+
 .promise-content p:nth-child(3) {
   padding: 0;
 }
+
 .promise-image {
   width: 50%;
 }
+
 .promise-content .description-text {
   width: 100%;
 }
+
 .promise-image img {
   width: 100%;
 }
+
 .promise-content {
   width: 40%;
 }
+
 .promise-content p {
   width: 100%;
 }
-@media only screen and (max-width:769px){
-  .banner-about_us{
+
+@media only screen and (max-width:1024px) {
+  .why-choose {
+    width: 100%;
+  } 
+  .promise-content {
+    width: 50%;
+  }
+  .founder-text {
+    padding: 0 0 0 35px;
+  } 
+}
+  @media only screen and (max-width:769px) {
+  .banner-about_us {
     padding-block: 100px 50px;
   }
-  .founder-text h4, .team-text h4 {
+
+  .founder-text h4,
+  .team-text h4 {
     grid-template-rows: 30px;
   }
+
   .technologies-image img {
-    border-radius: 10px;
+    border-radius:var(--border);
   }
+
   .banner-about_us p {
     padding-block: 10px 25px;
   }
-  .team-intro-section p{
-    font-size: 12px;
-  }
-  .team-image{
+
+  .team-image {
     padding-bottom: 70%;
   }
+
   .our-team {
     flex-direction: column;
   }
+
   .choose-head-img {
     max-width: 100%;
   }
+
   .why-choose {
     width: 90%;
     padding: 47px 15px 15px;
   }
+
   .promise-image-content {
     flex-direction: column;
-    gap:0px;
+    gap: 0px;
   }
+
   .our-team {
     gap: 50px;
   }
-  .team-founder .founder-image-text:last-child,.founder-image-text{
+
+  .team-founder .founder-image-text:last-child,
+  .founder-image-text {
     flex-direction: column;
   }
-  .founder-text{
-    padding: 0;
-    width: 100%;
+  .founder-image{
+    max-width: 100%;
   }
+  .founder-text {
+    padding: 0;
+    max-width: 100%;
+  }
+
   .team-heading {
     padding-block: 30px;
-  }  
-  .founder-text h4, .team-text h4 {
+  }
+
+  .founder-text h4,
+  .team-text h4 {
     font-size: 18px;
   }
+
   .founder-text p {
     text-align: start;
     display: flex;
-  } 
-  .our-team .team-image-text:first-child .team-text ,.team-text{
+  }
+
+  .our-team .team-image-text:first-child .team-text,
+  .team-text {
     padding: 0px 10px 20px;
-  } 
-  .promise-image,.team-image-text{
+  }
+
+  .promise-image,
+  .team-image-text {
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
   }
-  .technologies-section,.choose-content {
+
+  .technologies-section,
+  .choose-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }  
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .promise-content {
     width: 100%;
   }
+
   .promise-content p {
     width: 100%;
   }
+
   .choose-content {
     gap: 15px;
   }
+
   .technologies-image:before {
     width: 100%;
     height: 97%;
-    border-radius: 15px;
-  } 
+    border-radius: var(--border);
+  }
 }
-@media only screen and (max-width:425px){
+
+@media only screen and (max-width:425px) {
   .find-heading {
-    display: block; 
-  } 
+    display: block;
+  }
+
   .team-founder {
     gap: 40px;
   }
+
   .technologies-image:before {
     width: 100%;
     height: 98%;
   }
-  .founder-text h4, .team-text h4 {
+
+  .founder-text h4,
+  .team-text h4 {
     grid-template-rows: 50px;
   }
-  .choose-head-img {
-    max-width: 100%;
+
+  .technologies-section,
+  .choose-content {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .technologies-section,.choose-content {
-    grid-template-columns: repeat(1,1fr);
-  }
+
   .promise-head {
     display: block;
   }
+
   .choose-heading {
     display: block;
   }
+
   .about_us-heading {
     display: block;
   }

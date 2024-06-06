@@ -1,104 +1,129 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --red-color:red;
+  --color-green:green;
+  --color-contect:#409f9d;
+  --c-size:18px; 
+}
 .content-heading {
-  display: flex;
-  justify-content: center;
+  display: table;
+  margin: 0 auto;
 }
+
 .contect-form {
-  margin-top: 40px;
+  margin-block: 30px;
   padding: 50px;
-  width: 50%;
-  box-shadow: 0px 0px 3px 1.3px #00614e;
-  border-radius: 15px;
-  background: linear-gradient(100.9deg, #463670 23.06%, #00614e 40% , #2b9f9c 100.25%);
+  border-top-left-radius: var(--border);
+  border-bottom-left-radius: var(--border);
+  background: var(--color-white);
+  box-shadow:inset 2px 0px 10px 0px var(--color-box);
 }
-.contect-form input {
-  padding: 10px 15px;
-}
+
+.contect-form input,
 .contect-form textarea {
-  height: 160px;
   padding: 10px;
+  font-size:var(--c-size);
+  border: 1px solid var(--color-black);
   background: transparent;
-  color: #fff;
-  font-size: 18px;
-  border: 1px solid #fff;
+  color: var(--color-black);
 }
+
+.contect-form textarea {
+  min-height: 160px;
+}
+
 .btn {
   border: 0;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  font-size: 18px;
+  font-size:var(--c-size);
   padding: 15px;
   font-weight: 600;
   width: 100%;
-  color: #cbb26a;
+  color: var(--color-main);
   transition: 0.5s ease;
 }
-.btn:hover {
-  color: #fff;
-  transition: 0.5s ease;
-  position: relative;
-  z-index: 2;
-  border: 1px solid #00614e;
+.get-in-form {
+  display: flex;
+  padding-top: 50px;
+}
+.contect-side-section {
+  box-shadow:7px 0px 15px -8.7px var(--color-darkgreen);
+  padding: 50px;
+  background: var(--color-main);
+  border-top-right-radius: var(--border);
+  border-bottom-right-radius: var(--border);
+  max-width: 50%;
 }
 .btn:focus {
   outline: 0;
 }
+
 .btn:active {
   transform: scale(0.98);
 }
+
+.btn:hover {
+  color: var(--color-white);
+  border: 1px solid var(--color-darkgreen);
+}
+
 .text {
   margin-top: 30px;
 }
+
 .form-control {
-  margin: 20px 0 20px;
+  margin: 20px 0;
   position: relative;
 }
+
 .form-control input {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid white;
-  border-bottom-color: white;
-  color: white;
+  border-bottom: 2px solid var(--color-black);
+  color: var(--color-black);
   display: block;
-  font-size: 1.2rem;
+  font-size:var(--c-size).2rem;
   padding: 15px 0;
   width: 100%;
 }
+
 .form-control input::placeholder {
   color: transparent;
 }
-.form-control input:focus{
-  border-bottom: 2px solid white;
+
+.form-control input:focus {
+  border-bottom: 2px solid var(--color-black);
   outline: 0;
 }
 .form-control input:valid {
-  border-bottom: 2px solid green;
-  outline: 0;
+  border-bottom: 2px solid var(--color-green);
 }
 .form-control input:not(:placeholder-shown):invalid:empty {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--red-color);
 }
-
-/* .form-control input:invalid ~ label {
-  position: absolute;
-  top: -5px;
-} */
 .form-control label {
   left: 0;
   position: absolute;
   top: 15px;
-  color: white;
+  color: var(--color-black);
 }
 .form-control label span,
 .form label {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size:var(--c-size).2rem;
   min-width: 5px;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-  color: #fff;
+  color: var(--color-black);
   transform: translateY(-30px);
 }
 .form {
@@ -106,13 +131,8 @@
   flex-direction: column;
   gap: 10px;
 }
-.form label{
-  color: #fff;
-}
 form#contact-form {
   width: 100%;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
 }
 button.btn {
@@ -120,7 +140,6 @@ button.btn {
   border: 1px solid;
   position: relative;
   overflow: hidden;
-  border: 1px solid #fff;
   margin-top: 22px;
   z-index: 2;
 }
@@ -128,7 +147,7 @@ button.btn:after {
   content: "";
   transform: translate(-100%);
   position: absolute;
-  background: #00614e;
+  background: var(--color-darkgreen);
   top: 0;
   left: 0;
   width: 100%;
@@ -139,303 +158,164 @@ button.btn:after {
 }
 button.btn:hover:after {
   transform: translate(0%);
-  z-index: -1;
-  transition: 0.5s ease;
 }
-
-/* </------------- Find Me Start ------------------/> */
-.find-heading{
+.contect-address a.form-address p:before {
+  content: "\f3c5";
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+}
+.contect-address a.form-number p::before {
+  content: "\f2a0";
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+}
+.contect-address a p i{
+  padding: 30px;
+  width: 40px;
+  height: 40px;
+}
+.contect-address a.form-address p:before,.contect-address a.form-number p::before,.contect-address a p i{
+  font-family: fontAwesome;
+  color: var(--color-white);
+  border-radius: var(--circle);
+  background: var(--color-contect);
+  display: inline-flex;
+  box-shadow: 0 0 12px 0px var(--color-box);
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.contect-address a p {
+  color: var(--color-white);
+  padding-top: 50px;
+  font-size: var(--p-size);
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+/* Find Me Section */
+.find-heading {
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
 }
+
 .find-map iframe {
   width: 100%;
+  height: 450px;
+  border-radius: var(--border);
 }
-i.et-pb-icon img {
-  width: 37px;
-}
+
 ul.find-content {
   display: flex;
   gap: 20px;
 }
+
 ul.find-content li {
   list-style: none;
   padding: 0;
-  color: black;
+  color: var(--color-black);
   font-weight: 600;
   line-height: 28px;
 }
-.find-map iframe {
-  height: 450px;
-}
-.contect-section .appointment-number a,.contect-section .appointment-whatsapp a{
-  padding: 10px;
-}
-.appointment-section{
-  padding-block: 50px 0;
-}
-.appointment-address p{
-  color:#fff;
-  padding: 0 20px 30px;
-}
+
 .find-text a {
-  color: black;
+  color: var(--color-black);
   align-items: center;
   display: flex;
   line-height: 28px;
 }
+
+/* Contact Section */
+.contect-section .appointment-number a,
+.contect-section .appointment-whatsapp a {
+  padding: 10px 0 20px 20px;
+}
+
+.appointment-section {
+  padding-block: 50px 0;
+}
+
+.appointment-address p {
+  color: var(--color-white);
+  padding: 0 20px 30px;
+}
+
 .contect-section .appointment-number a:last-child:before {
   content: "\f232";
 }
-@media only screen and (max-width:1024px) {
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
   .contect-form {
-    width: 80%;
-  }
-}
-@media only screen and (max-width:767px) {
-  .contect-form {
-    width: 100%;
     padding: 20px;
-  } 
-  form#contact-form {
-    width: 80%;
-  } 
-  .contect-section .appointment-content{
-    width: 80%;
   }
-  .contect-section .appointment-number a:before,.appointment-time p:before {
+  .contect-section .appointment-number a:before,
+  .appointment-time p:before {
     margin-right: 10px;
-    font-size: 12px;
+    font-size: var(--rp-size);
     width: 35px;
     height: 35px;
   }
-}
-@media only screen and (max-width:500px) {
-  .contect-section .appointment-nu.content-heading {
-    display: flex;
-    justify-content: center;
+  .get-in-form {
+    flex-direction: column;
+  }
+  .contect-side-section{
+    max-width: 100%;
+    padding: 25px;
+  } 
+  .contect-address a.form-address p:before {
+    padding: 18px;
+    width: 25.6px;
+    height: 14px;
+  }
+  .contect-address a p i {
+    padding: 25px;
+    width: 25px;
+    height: 25px;
+  } 
+  .contect-address a.form-number p::before {
+    padding: 15px;
+  }
+  .contect-address a p {
+    padding-top: 25px;
+    font-size: var(--rp-size);
   }
   .contect-form {
-    margin-top: 40px;
-    padding: 50px;
-    width: 50%;
-    box-shadow: 0px 0px 3px 1.3px #00614e;
-    border-radius: 15px;
-    background: linear-gradient(100.9deg, #463670 23.06%, #00614e 40% , #2b9f9c 100.25%);
+     margin-block: 0px;
+     border-top-right-radius: var(--border);
+     border-bottom-left-radius: 0;
+     box-shadow: 0 0px 15px -8.7px var(--color-darkgreen);
   }
-  .contect-form input {
-    padding: 10px 15px;
+  .contect-side-section{
+    border-top-right-radius:0;
+    border-bottom-left-radius:var(--border);
+    box-shadow: 0 7px 15px -8.7px var(--color-darkgreen);
   }
-  .contect-form textarea {
-    height: 160px;
-    padding: 10px;
-    background: transparent;
-    color: #fff;
-    font-size: 18px;
-  }
-  .btn {
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    padding: 15px;
-    font-weight: 600;
-    width: 100%;
-    color: #cbb26a;
-    transition: 0.5s ease;
-  }
-  .btn:hover {
-    color: #fff;
-    transition: 0.5s ease;
-    position: relative;
-    z-index: 2;
-    border: 1px solid #00614e;
-  }
-  .btn:focus {
-    outline: 0;
-  }
-  .btn:active {
-    transform: scale(0.98);
-  }
-  .text {
-    margin-top: 30px;
-  }
-  .form-control {
-    margin: 20px 0 20px;
-    position: relative;
-  }
-  .form-control input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid white;
-    color: white;
-    display: block;
-    font-size: 1.2rem;
-    padding: 15px 0;
-    width: 100%;
-  }
-  .form-control input::placeholder {
-    color: transparent;
-  }
+  .contect-heading {
+    display: table;
+    margin: 0 auto;
+  } 
+}
+
+@media only screen and (max-width: 500px) {
   .form-control input:focus,
   .form-control input:valid {
-    border-bottom-color: #fff;
-    outline: 0;
+    border-bottom-color: var(--color-black);
   }
-  .form-control label {
-    left: 0;
-    position: absolute;
-    top: 15px;
-    color: white;
-  }
-  .form-control label span,
   .form label {
-    display: inline-block;
-    font-size: 1.2rem;
-    min-width: 5px;
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .form-control input:focus + label span,
-  .form-control input:valid + label span {
-    color: #fff;
-    transform: translateY(-30px);
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .form label{
-    color: #fff;
-  }
-  form#contact-form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    color: var(--color-white);
   }
   button.btn {
-    background: transparent;
-    border: 1px solid;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #fff;
-    margin-top: 22px;
-    z-index: 2;
-  }
-  button.btn:after {
-    content: "";
-    transform: translate(-100%);
-    position: absolute;
-    background: #00614e;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-    z-index: -1;
-    transition: 0.5s ease;
-  }
-  button.btn:hover:after {
-    transform: translate(0%);
-    z-index: -1;
-    transition: 0.5s ease;
-  }
-  
-  /* </------------- Find Me Start ------------------/> */
-  .find-heading{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
-  }
-  i.et-pb-icon img {
-    width: 37px;
-  }
-  ul.find-content {
-    display: flex;
-    gap: 20px;
-  }
-  ul.find-content li {
-    list-style: none;
-    padding: 0;
-    color: black;
-    font-weight: 600;
-    line-height: 28px;
-  }
-  .find-map iframe {
-    height: 450px;
-  }
-  .contect-section .appointment-number a,.contect-section .appointment-whatsapp a{
-    padding: 10px;
-  }
-  .appointment-section{
-    padding-block: 50px 0;
-  }
-  .appointment-address p{
-    color:#fff;
-    padding: 0 20px 30px;
-  }
-  .find-text a {
-    color: black;
-    align-items: center;
-    display: flex;
-    line-height: 28px;
-  }
-  .contect-section .appointment-number a:last-child:before {
-    content: "\f232";
-  }
-  @media only screen and (max-width:1024px) {
-    .contect-form {
-      width: 80%;
-    }
-  }
-  @media only screen and (max-width:767px) {
-    .contect-form {
-      width: 100%;
-      padding: 20px;
-    } 
-    form#contact-form {
-      width: 80%;
-    } 
-    .contect-section .appointment-content{
-      width: 80%;
-    }
-    .contect-section .appointment-number a:before,.appointment-time p:before {
-      margin-right: 10px;
-      font-size: 12px;
-      width: 35px;
-      height: 35px;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    .contect-section .appointment-number a, .contect-section .appointment-whatsapp a {
-      padding: 10px 0 10px 20px;
-    }
-  }
-  @media only screen and (max-width:425px) {
-    .content-heading {
-      display: block;
-    }
-    .find-heading {
-      display: block;
-    }
-    .find-heading {
-      display: block;
-    } 
-  }mber a, .contect-section .appointment-whatsapp a {
-    padding: 10px 0 10px 20px;
+    border: 1px solid var(--color-black);
   }
 }
-@media only screen and (max-width:425px) {
-  .content-heading {
-    display: block;
-  }
+
+@media only screen and (max-width: 425px) {
+  .content-heading,
   .find-heading {
     display: block;
   }
-  .find-heading {
-    display: block;
-  } 
 }

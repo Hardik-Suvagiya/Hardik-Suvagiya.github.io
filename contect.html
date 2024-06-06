@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,30 +73,44 @@
       </div>
     </div>
   </section>
-  <section class="contect-us fade-in">
+  <section class="contect-us">
     <div class="container-header">
-      <div class="content-heading">
+      <div class="content-heading fade-in">
         <h2 class="bottom-line">Contact Form</h2>
       </div>
-      <form method="post" id="contact-form" target="_blank" action="mailto:contact@dente32.com">
-        <div class="contect-form">
-          <div class="form-control">
-            <input type="text" required placeholder="email" id="email" />
-            <label for="Name">Name</label>
+      <div class="get-in-form">
+        <form method="post" id="contact-form" target="_blank" action="mailto:contact@dente32.com">
+          <div class="contect-form">
+            <div class="form-control fade-out">
+              <input type="text" required placeholder="email" id="email" />
+              <label for="Name">Name</label>
+            </div>
+            <div class="form-control fade-out">
+              <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required placeholder="password" id="password" />
+              <label for="password">Email</label>
+            </div>
+            <div class="form fade-out">
+              <label for="message">Message </label>
+              <textarea name="message" required aria-valuetext="Give me your Problem"></textarea>
+            </div>
+            <p>
+              <button class="btn fade-out" type="submit" value="Send">Send Me Massage</button>
+            </p>
           </div>
-          <div class="form-control">
-            <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required placeholder="password" id="password" />
-            <label for="password">Email</label>
+        </form>
+        <div class="contect-side-section">
+          <div class="contect-heading">
+            <h3>Contact Us</h3>
           </div>
-          <div class="form">
-            <label for="message">Message </label>
-            <textarea name="message" required aria-valuetext="Give me your Problem"></textarea>
+          <div class="contect-address">
+            <a class="form-address" href="https://maps.app.goo.gl/BUG6BKd3Dsj9tMib6"><p>306, Milestone Complex, Opp. Suvarnabhumi,
+              Zanzarda Cross Road, Junagadh</p></a>
+            <a class="form-number" href="tel:+91 94998 45707" target="_blank"><p>+91 94998 45707</p></a>
+            <a href="mailto:contact@dente32.com" target="_blank"><p><i class="fa-solid fa-envelope"></i>
+              contact@dente32.com</p></a>
           </div>
-          <p>
-            <button class="btn" type="submit" value="Send">Send Me Massage</button>
-          </p>
         </div>
-      </form>
+      </div>  
     </div>
   </section>
   <section class="contect-section">
@@ -107,53 +122,56 @@
         <div class="find-map fade-in">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.5954046727093!2d70.434195!3d21.523562100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3957ff0053718993%3A0x978a7d37ac9c6ad6!2sDente%2032%20Dental%20%26%20Asthetic%20Care!5e0!3m2!1sen!2sin!4v1712421897135!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="appointment-section fade-in">
-          <div class="appointment-content">
-            <div class="appointment-number">
-              <h3>Appointment<br> With Call / WhatsApp</h3>
-              <a href="tel:+91 94998 45707" target="_blank">+91 94998 45707</a>
-              <a target="_blank"
-              href="https://wa.me/+919426325707?text=Hello,+I+am+interested+in+knowing+more+about+your +WhatsApp+API+service">+91 94263 25707</a>
-            </div>
-            <div class="appointment-time">
-              <h3>Appointment<br> Scheduled</h3>
-              <p><span>Monday to Saturday<br>08:00 Am to 08:00 Pm</span></p>
-              <p><span>Sunday<br>All Sunday Close</span></p>
-            </div>
-            <div class="appointment-whatsapp appointment-address">
-              <h3>Appointment<br> Address </h3>
-              <a href="https://maps.app.goo.gl/BUG6BKd3Dsj9tMib6"><p>306, Milestone Complex, Opp. Suvarnabhumi,
-                Zanzarda Cross Road, Junagadh</p></a>
+        <div class="container-header">
+          <div class="appointment-section">
+            <div class="appointment-content">
+              <div class="appointment-number">
+                <h3 class="fade-out">Appointment<br> With Call / WhatsApp</h3>
+                <a class="fade-out" href="tel:+91 94998 45707" target="_blank">+91 94998 45707</a>
+                <a class="fade-out" target="_blank"
+                href="https://wa.me/+919426325707?text=Hello,+I+am+interested+in+knowing+more+about+your +WhatsApp+API+service">+91 94263 25707</a>
+              </div>
+              <div class="appointment-time">
+                <h3>Appointment<br> Scheduled</h3>
+                <p><span>Monday to Saturday<br>08:00 Am to 08:00 Pm</span></p>
+                <p><span>Sunday<br>All Sunday Close</span></p>
+              </div>
+              <div class="appointment-whatsapp appointment-address">
+                <h3 class="fade-in">Appointment<br> Address </h3>
+                <a class="fade-in" href="https://maps.app.goo.gl/BUG6BKd3Dsj9tMib6"><p>306, Milestone Complex, Opp. Suvarnabhumi,
+                  Zanzarda Cross Road, Junagadh</p></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="fade-in">
+  <footer>
     <div class="container-header">
       <div class="footer">
         <div class="footer-section">
-          <div class="fotter-logo">
+          <div class="fotter-logo fade-out">
             <a href="Home.html"><img src="image/Dental-Logo-Footer.png" alt="DR. Shuvagiya" /></a>
           </div>
-          <p>For the first time in Junagadh city, we are introducing cutting-edge technologies and a revolutionary
+          <p class="fade-out">For the first time in Junagadh city, we are introducing cutting-edge technologies and a revolutionary
             vision for advanced dental treatment for all ages. Choose Dente32 for a dental experience that goes beyond
-            the usual. We make sure that achieving a beautiful smile matches the goal of having the healthiest teeth possible.</p>
-            <div class="social-icon">
-              <div class="text-social">
-                <a href="https://wa.me/+919426325707?text=Hello,+I+am+interested+in+knowing+more+about+your +WhatsApp+API+service"
-                  target="_blank"><img src="image/whatsapp icon.png" /></a>
-                <a href="https://www.instagram.com/dente32_dental_aesthetic_care/" target="_blank"><img src="image/Instagram.png" /></a>
-                <a target="_blank" href="https://www.facebook.com/Dente32junagadh/"><img src="image/facebook-logo.png" alt="facebook"></i></a>
-              </div>
+            the usual. We make sure that achieving a beautiful smile matches the goal of having the healthiest teeth
+            possible.</p>
+          <div class="social-icon">
+            <div class="text-social fade-out">
+              <a href="https://wa.me/+919426325707?text=Hello,+I+am+interested+in+knowing+more+about+your +WhatsApp+API+service"
+                target="_blank"><img src="image/whatsapp icon.png" /></a>
+              <a href="https://www.instagram.com/dente32_dental_aesthetic_care/" target="_blank"><img src="image/Instagram.png" /></a>
+              <a target="_blank" href="https://www.facebook.com/Dente32junagadh/"><img src="image/facebook-logo.png" alt="facebook"></i></a>
             </div>
+          </div>
         </div>
         <div class="quick-link">
           <h3>Quick Link</h3>
           <div class="footer-link">
             <ul>
-              <li><a href="home.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about-us.html">About Us</a></li>
               <li><a href="why-choose.html">Why Choose Us?</a></li>
               <li class="active"><a href="contect.html">Contect</a></li>
@@ -162,9 +180,10 @@
           </div>
         </div>
         <div class="footer-location">
-          <h3>Location Address</h3>
-          <div class="fotter-address">
-            <a target="_blank" href="//maps.app.goo.gl/BUG6BKd3Dsj9tMib6"><i
+          <h3 class="fade-in">Location Address</h3>
+          <div class="fotter-address fade-in">
+            <a target="_blank"
+            href="//maps.app.goo.gl/BUG6BKd3Dsj9tMib6"><i
                 class="fa-solid fa-location-dot"></i> 306, Milestone
               Complex, Opp. Suvarnabhumi, Zanzarda Cross Road, Junagadh</a>
             <a target="_blank"
@@ -176,9 +195,9 @@
           </div>
         </div>
       </div>
-        <div class="footer-policy">
-          <p>Copyright © 2024 DENTE32 | Privacy Policy</p>
-        </div>
+      <div class="footer-policy">
+        <p>Copyright © 2024 DENTE32 | Privacy Policy</p>
+      </div>
     </div>
   </footer>
   <script src="script.js"></script>

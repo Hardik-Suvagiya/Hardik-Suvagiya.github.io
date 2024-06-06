@@ -10,7 +10,26 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       });
   }, {
-      threshold: 0.5 // Trigger when 50% of the element is visible
+      threshold: 0.2 // Trigger when 50% of the element is visible
+  });
+
+  boxes.forEach(box => {
+      observer.observe(box);
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.fade-out');
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+          } else {
+              entry.target.classList.remove('show');
+          }
+      });
+  }, {
+      threshold: 0.2 // Trigger when 50% of the element is visible
   });
 
   boxes.forEach(box => {
