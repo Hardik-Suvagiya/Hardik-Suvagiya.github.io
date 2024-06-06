@@ -660,7 +660,10 @@ nav.navigation ul li a,
     border-top-right-radius: var(--border);
     border-bottom-right-radius: var(--border);
 }
-
+.appointment-section {
+    padding-block: 50px 0;
+    overflow: hidden;
+  }  
 .appointment-time {
     background-color: var(--color-darkgreen);
     box-shadow: inset 0px 0px 20px 0px var(--color-black);
@@ -923,7 +926,7 @@ footer h3 {
     }
 
     .content-service-slider .slick-list .slick-track {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     .appointment-section {
@@ -1257,11 +1260,13 @@ footer h3 {
     }
 
     .banner-text {
+        max-width: 100%;
         width: 100%;
     }
 
     .image-banner {
-        width: 70%;
+        width: 100%;
+        max-width: 90%;
     }
 
     .banner-text p {

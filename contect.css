@@ -234,10 +234,6 @@ ul.find-content li {
   padding: 10px 0 20px 20px;
 }
 
-.appointment-section {
-  padding-block: 50px 0;
-}
-
 .appointment-address p {
   color: var(--color-white);
   padding: 0 20px 30px;
